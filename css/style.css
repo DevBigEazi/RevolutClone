@@ -1,0 +1,355 @@
+/* HEADER AND NAVBAR */
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e8eded;
+  height: 138px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  padding: 42px 100px;
+  z-index: 1;
+  box-shadow: 0px 1.2rem 3.2rem rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  color: #1c1c1c;
+  text-decoration: none;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.mainNav .navBtn {
+  display: none;
+}
+
+.mainNavList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  list-style-type: none;
+  color: #1c1c1c;
+  gap: 3.2rem;
+  font-size: 24px;
+}
+
+.mainNavList:link,
+.mainNavList:visited {
+  color: #1c1c1c;
+  text-decoration: none;
+}
+
+.mainNavLink:hover,
+.mainNavLink:active {
+  color: #6fcade;
+  text-decoration: underline;
+}
+
+/* PERSONAL LIST */
+.PersonalList {
+  list-style: none;
+  font-size: 24px;
+  margin-top: 20rem;
+  padding: 70px 30px;
+  background-color: #e8eded;
+  gap: 2rem;
+  display: none;
+}
+
+.personalLink:link .personalLink {
+  display: none;
+}
+
+.personalLink:link,
+.personal:visited {
+  color: #1c1c1c;
+  font-size: 24px;
+}
+
+.personalLink:hover,
+.personal:active {
+  color: #6fcade;
+}
+
+.mainNavigationLink:hover .PersonalList {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rem;
+  padding: 5px 50px;
+  border-radius: 10px;
+}
+
+/* NAV BUTTON */
+.mobileDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navBtn {
+  display: flex;
+  gap: 1rem;
+  font-family: "Syne", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.btn,
+.btnlink,
+.btn:visited {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  width: 160px;
+  padding: 5px 15px;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.loginButton:link,
+.loginButton:visited {
+  background-color: #9fb7b9;
+  color: #f6f6f6;
+  font-family: "Syne", sans-serif;
+}
+
+.loginButton:hover,
+.loginButton:active {
+  background-color: #b7ced1;
+  color: #1c1c1c;
+}
+.signupButton:link,
+.signupButton:visited {
+  border: 1px solid #1c1c1c;
+  color: #1c1c1c;
+  font-family: "Syne", sans-serif;
+}
+.signupButton:hover,
+.signupButtons:active {
+  color: #1c1c1c;
+  background-color: #f5f2ec;
+}
+
+/* MOBILE NAV BUTTON */
+.btn-mobile-nav {
+  cursor: pointer;
+  background: none;
+  border: none;
+  display: none;
+}
+
+.icon-mobile-nav {
+  width: 4.8rem;
+  height: 4.8rem;
+  color: #000;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/* HERO SECTION */
+.heroSection {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  margin-top: 15rem;
+  background-image: url(/img/hero.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.heroText,
+.heroSubTitle {
+  margin-bottom: 34px;
+  font-size: 32px;
+  font-weight: 500;
+  color: #1c1c1c;
+}
+
+.heroTitle {
+  font-family: "Syne", sans-serif;
+  font-size: 115px;
+  font-weight: 600;
+  margin-bottom: 34px;
+}
+
+.heroBtn {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Syne", sans-serif;
+}
+
+.heroBtn .btn {
+  font-size: 24px;
+  color: #f6f6f6;
+  background: #9fb7b9;
+  width: 346px;
+  height: 64px;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.heroBtn .btn:hover,
+.heroBtn .btn:active {
+  color: #1c1c1c;
+  background: #b7ced1;
+}
+
+/* ABOUT SECTION */
+.aboutSection {
+  padding: 0 171px;
+  margin: 167px 0 141px;
+}
+
+.aboutSection .gridCard {
+  width: 1385px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 178px;
+  background-color: #6fcade;
+  border-radius: 20px;
+  padding: 135px 61px 62px 80px;
+  margin-top: 10rem;
+}
+
+/* ADD WALLET CARD*/
+.aboutSection .addWallet {
+  padding: 135px 61px 62px 68px;
+}
+
+.aboutSection .gridItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutSection .gridItem .atmTablet {
+  display: none;
+}
+
+.aboutSection .gridItemText {
+  align-items: flex-start;
+  color: #1c1c1c;
+}
+
+.aboutSection .gridItem button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #1c1c1c;
+  color: #f6f6f6;
+  width: 411px;
+  height: 65px;
+  border-radius: 10px;
+  margin-top: 29px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+button :nth-child(2) {
+  display: none;
+}
+
+.aboutSection .gridItemText h3 {
+  font-family: "Syne", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  width: 468px;
+  line-height: 38px;
+  margin-bottom: 25px;
+}
+
+.aboutSection .gridItemText p {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 32px;
+  width: 574px;
+  margin-bottom: 152px;
+}
+
+/* LEARN MORE CARD */
+.aboutSection .learnMore {
+  grid-column-gap: 100px;
+  padding: 21px 61px 41px 83px;
+}
+
+.aboutSection .gridItemText .learnMoreBtn {
+  width: 236px;
+}
+
+.aboutSection .learnMore .gridItemText {
+  margin-top: 135px;
+}
+
+/* FOOTER SECTION */
+.footerSection {
+  background-image: url(/img/footer.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-color: #1c1c1c;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 89px;
+  color: #f6f6f6;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: "Syne", "sans-serif";
+  height: 100vh;
+  padding: 152px 831px 164px 100px;
+}
+
+.footerSection .gridItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerSection h4 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 55px;
+}
+
+.footerSection .footerLink {
+  width: 134px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 27px;
+  font-size: 22px;
+  font-weight: 300;
+  font-family: "inter", sans-serif;
+}

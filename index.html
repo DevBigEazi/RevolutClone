@@ -4,54 +4,88 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/mediaQuery.css" />
+    <link rel="stylesheet" href="/css/general.css" />
+    <link rel="icon" href="/img/Polygon.png" />
+    <link rel="apple-touch-icon" href="/img/Polygon.png" />
   </head>
-  <body class="sticky">
+  <body class="menu">
     <header class="header">
-      <a href="#" class="headerText">
-        <h2>Revoult</h2>
-        <img src="./img/Ellipse.png" alt="Ellipse_picture" />
-        <img src="./img/Polygon.png" alt="Polygon_picture" />
-        <img src="./img/Rectangle.png" alt="Rectangle_picture" />
+      <a href="#" class="logo">
+        <h2>Revolut</h2>
+        <img src="/img/Ellipse.png" alt="circle picture" />
+        <img src="/img/polygon.png" alt="polygon picture" />
+        <img src="/img/Rectangle.png" alt="rectangle picture" />
       </a>
+
       <nav class="mainNav">
         <ul class="mainNavList">
-          <li><a href="#" class="mainNavLink">Personal</a></li>
+          <li class="mainNavigationLink">
+            <a href="#" class="mainNavLink">Personal</a>
+            <ul class="PersonalList">
+              <li><a href="#" class="personalLink">Card</a></li>
+              <li><a href="#" class="personalLink">Atm</a></li>
+              <li><a href="#" class="personalLink">Transfer</a></li>
+              <li><a href="#" class="personalLink">FAQ</a></li>
+              <li><a href="#" class="personalLink">Get Pin</a></li>
+            </ul>
+          </li>
           <li><a href="#" class="mainNavLink">Business</a></li>
           <li><a href="#" class="mainNavLink">Revoult&lt;18</a></li>
           <li><a href="#" class="mainNavLink">Company</a></li>
+          <ul class="navBtn">
+            <a href="#" class="btn loginButton">Login</a>
+            <a href="/form/form.html" class="btn signupButton">sign up</a>
+          </ul>
         </ul>
       </nav>
-      <div class="navBtn">
-        <a href="#" class="btn loginBtn">Log in</a>
-        <a href="#" class="btn signUpBtn">Sign up</a>
+
+      <div class="mobileDiv">
+        <div class="navBtn">
+          <a href="#" class="btn loginButton">Login</a>
+
+          <a href="/form/form.html" class="btn signupButton">sign up</a>
+        </div>
+
+        <div class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </div>
       </div>
     </header>
+
+    <!-- Hero Section -->
     <main>
-      <!-- HERO SECTION -->
       <section class="heroSection">
         <div class="heroContainer">
-          <p class="heroText">Cards</p>
-          <h2 class="heroTitle">
-            Get a card <br />
-            you control
-          </h2>
+          <h5 class="heroText">Cards</h5>
+
+          <h2 class="heroTitle">Get a card<br />you control</h2>
           <h5 class="heroSubTitle">Manage cards in-app with just a tap</h5>
           <div class="heroBtn">
-            <a href="#" class="btn"> Get a freee acount </a>
+            <a href="#" class="button btn"> Get a free account</a>
           </div>
         </div>
       </section>
 
-      <!-- ABOUT SECTION -->
+      <!-- About section -->
       <section class="aboutSection">
         <div class="gridCard addWallet">
-          <div class="gridItem">
-            <img src="/img/sha.png" alt="atm card" /><br />
+          <div class="gridItem gridItemCard">
+            <img
+              class="aboutImg"
+              src="/img/Card1.png"
+              style="border-radius: 10px"
+              alt="atm Card"
+            />
+
             <a href="#">
               <button>
-                <img src="/img/Walletimg.png" alt="wallet icon" /> Add to apple
-                wallet
+                <img src="/img/Wallet.png" alt="wallet Icon" />
+                <img src="/img/wallet2.svg" alt="wallet Icon" />
+
+                Add to apple wallet
               </button>
             </a>
           </div>
@@ -66,8 +100,9 @@
         </div>
 
         <div class="gridCard learnMore">
-          <div class="gridItem">
-            <img src="/img/atm-card.svg" alt="atm card" /><br />
+          <div class="gridItem learnMoreCard">
+            <img src="/img/atm2.png" alt="atm Card" class="atm2" />
+            <img src="/img/atmTablet.svg" alt="atm Card" class="atmTablet" />
           </div>
 
           <div class="gridItem gridItemText">
@@ -76,56 +111,63 @@
               Connect your card to tap and pay with your phone. No need to wait
               for your physical card to arrive
             </p>
-            <a href="#">
-              <button class="learnMoreBtn">Learn More</button>
-            </a>
+            <a href="#"><button class="learnMoreBtn">Learn More</button></a>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- FOOTER SECTION -->
+    <!-- Footer -->
     <footer class="footerSection">
       <div class="gridItem">
         <h4>Personal</h4>
-        <div class="footerLinks">
-          <a href="#">Card</a>
-          <a href="#">Atm</a>
-          <a href="#">Tranfer</a>
-          <a href="#">Faq</a>
-          <a href="#">Get Your Pin</a>
+        <div class="footerLink">
+          <a href="#">Cards</a>
+          <a href="#">Rorem</a>
+          <a href="#">Sorem</a>
+          <a href="#">Norem ipsum </a>
+          <a href="#">FAQ</a>
         </div>
       </div>
       <div class="gridItem">
         <h4>Business</h4>
-        <div class="footerLinks">
-          <a href="#">Card</a>
-          <a href="#">Atm</a>
-          <a href="#">Tranfer</a>
-          <a href="#">Faq</a>
-          <a href="#">Get Your Pin</a>
+        <div class="footerLink">
+          <a href="#">Teams</a>
+          <a href="#">Rorem</a>
+          <a href="#">Sorem</a>
+          <a href="#">Norem ipsum </a>
+          <a href="#">FAQ</a>
         </div>
       </div>
       <div class="gridItem">
         <h4>Revoult</h4>
-        <div class="footerLinks">
-          <a href="#">Card</a>
-          <a href="#">Atm</a>
-          <a href="#">Tranfer</a>
-          <a href="#">Faq</a>
-          <a href="#">Get Your Pin</a>
+        <div class="footerLink">
+          <a href="#">Teens</a>
+          <a href="#">Rorem</a>
+          <a href="#">Sorem</a>
+          <a href="#">Norem ipsum </a>
+          <a href="#">FAQ</a>
         </div>
       </div>
       <div class="gridItem">
         <h4>Company</h4>
-        <div class="footerLinks">
-          <a href="#">Card</a>
-          <a href="#">Atm</a>
-          <a href="#">Tranfer</a>
-          <a href="#">Faq</a>
-          <a href="#">Get Your Pin</a>
+        <div class="footerLink">
+          <a href="#">About us</a>
+          <a href="#">Rorem</a>
+          <a href="#">Sorem</a>
+          <a href="#">Norem ipsum </a>
+          <a href="#">FAQ</a>
         </div>
       </div>
     </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
